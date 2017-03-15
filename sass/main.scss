@@ -1,0 +1,28 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  background-color: #363636;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+#switch,#hex{
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+}
+#switch{
+  left: 10px;
+}
+#hex{
+  right: 10px;
+  text-decoration: none;
+  color: white;
+}
+.clock,.hexclock{
+  font-size: 100px;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  text-align: center;
+  margin-top: 20%;
+}
