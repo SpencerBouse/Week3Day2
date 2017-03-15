@@ -23,6 +23,7 @@ function startTime() {
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
+  h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
   liveClock.innerHTML = h+':'+m+':'+s;
@@ -30,7 +31,7 @@ function startTime() {
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i};
-    return i;
+    return String(i);
 }
 
 function startTimecolor() {
@@ -38,6 +39,7 @@ function startTimecolor() {
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
+  h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
   colorClock.innerHTML = '#'+h+''+m+''+s;
